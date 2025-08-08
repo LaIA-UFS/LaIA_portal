@@ -1,0 +1,273 @@
+@import "tailwindcss";
+
+.scroll-hide::-webkit-scrollbar {
+  display: none;
+}
+/* Esconde a barra de rolagem no Firefox */
+.scroll-hide {
+  scrollbar-width: none;
+}
+/* Scroll suave */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Flip Card */
+
+.perspective {
+  perspective: 1000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.hover\:rotate-y-180:hover {
+  transform: rotateY(180deg);
+}
+
+
+/* Impedir arraste de imagens */
+
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+/* Grid rotativo */
+
+.container {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.imagem {
+  height: 80vh;
+  width: 80vh;
+  pointer-events: none;
+  transition: 100ms linear transform;
+  display: block;
+}
+
+.reflection{
+  position: absolute;
+  z-index: 1;
+  width: 10%;
+  height: 10%;
+}
+
+.cell1 { top: 0%; left: 0%;}
+.cell1:hover ~ .imagem{transform:rotateY(-25deg);}
+.cell2 { top: 0%; left: 10%;}
+.cell2:hover ~ .imagem{transform:rotateY(-20deg);}
+.cell3 { top: 0%; left: 20%;}
+.cell3:hover ~ .imagem{transform:rotateY(-15deg);}
+.cell4 { top: 0%; left: 30%;}
+.cell4:hover ~ .imagem{transform:rotateY(-10deg);}
+.cell5 { top: 0%; left: 40%;}
+.cell5:hover ~ .imagem {transform:rotateY(-5deg);}
+.cell6 { top: 0%; left: 50%;}
+.cell6:hover ~ .imagem  {transform:rotateY(0deg);}
+.cell7 { top: 0%; left: 60%;}
+.cell7:hover ~ .imagem  {transform:rotateY(5deg);}
+.cell8 { top: 0%; left: 70%;}
+.cell8:hover ~ .imagem {transform:rotateY(10deg);}
+.cell9 { top: 0%; left: 80%;}
+.cell9:hover ~ .imagem {transform:rotateY(15deg);}
+.cel10 { top: 0%; left: 90%;}
+.cel10:hover ~ .imagem {transform:rotateY(20deg);}
+.cel11 { top: 10%; left: 0%;}
+.cel11:hover ~ .imagem{transform:rotateY(-25deg);}
+.cel12 { top: 10%; left: 10%;}
+.cel12:hover ~ .imagem{transform:rotateY(-20deg);}
+.cel13 { top: 10%; left: 20%;}
+.cel13:hover ~ .imagem{transform:rotateY(-15deg);}
+.cel14 { top: 10%; left: 30%;}
+.cel14:hover ~ .imagem{transform:rotateY(-10deg);}
+.cel15 { top: 10%; left: 40%;}
+.cel15:hover ~ .imagem {transform:rotateY(-5deg);}
+.cel16 { top: 10%; left: 50%;}
+.cel16:hover ~ .imagem  {transform:rotateY(0deg);}
+.cel17 { top: 10%; left: 60%;}
+.cel17:hover ~ .imagem  {transform:rotateY(5deg);}
+.cel18 { top: 10%; left: 70%;}
+.cel18:hover ~ .imagem {transform:rotateY(10deg);}
+.cel19 { top: 10%; left: 80%;}
+.cel19:hover ~ .imagem {transform:rotateY(15deg);}
+.cel20 { top: 10%; left: 90%;}
+.cel20:hover ~ .imagem {transform:rotateY(20deg);}
+.cel21 { top: 20%; left: 0%;}
+.cel21:hover ~ .imagem{transform:rotateY(-25deg);}
+.cel22 { top: 20%; left: 10%;}
+.cel22:hover ~ .imagem{transform:rotateY(-20deg);}
+.cel23 { top: 20%; left: 20%;}
+.cel23:hover ~ .imagem{transform:rotateY(-15deg);}
+.cel24 { top: 20%; left: 30%;}
+.cel24:hover ~ .imagem{transform:rotateY(-10deg);}
+.cel25 { top: 20%; left: 40%;}
+.cel25:hover ~ .imagem {transform:rotateY(-5deg);}
+.cel26 { top: 20%; left: 50%;}
+.cel26:hover ~ .imagem  {transform:rotateY(0deg);}
+.cel27 { top: 20%; left: 60%;}
+.cel27:hover ~ .imagem  {transform:rotateY(5deg);}
+.cel28 { top: 20%; left: 70%;}
+.cel28:hover ~ .imagem {transform:rotateY(10deg);}
+.cel29 { top: 20%; left: 80%;}
+.cel29:hover ~ .imagem {transform:rotateY(15deg);}
+.cel30 { top: 20%; left: 90%;}
+.cel30:hover ~ .imagem {transform:rotateY(20deg);}
+.cel31 { top: 30%; left: 0%;}
+.cel31:hover ~ .imagem{transform:rotateY(-25deg);}
+.cel32 { top: 30%; left: 10%;}
+.cel32:hover ~ .imagem{transform:rotateY(-20deg);}
+.cel33 { top: 30%; left: 20%;}
+.cel33:hover ~ .imagem{transform:rotateY(-15deg);}
+.cel34 { top: 30%; left: 30%;}
+.cel34:hover ~ .imagem{transform:rotateY(-10deg);}
+.cel35 { top: 30%; left: 40%;}
+.cel35:hover ~ .imagem {transform:rotateY(-5deg);}
+.cel36 { top: 30%; left: 50%;}
+.cel36:hover ~ .imagem  {transform:rotateY(0deg);}
+.cel37 { top: 30%; left: 60%;}
+.cel37:hover ~ .imagem  {transform:rotateY(5deg);}
+.cel38 { top: 30%; left: 70%;}
+.cel38:hover ~ .imagem {transform:rotateY(10deg);}
+.cel39 { top: 30%; left: 80%;}
+.cel39:hover ~ .imagem {transform:rotateY(15deg);}
+.cel40 { top: 30%; left: 90%;}
+.cel40:hover ~ .imagem {transform:rotateY(20deg);}
+.cel41 { top: 40%; left: 0%;}
+.cel41:hover ~ .imagem{transform:rotateY(-25deg);}
+.cel42 { top: 40%; left: 10%;}
+.cel42:hover ~ .imagem{transform:rotateY(-20deg);}
+.cel43 { top: 40%; left: 20%;}
+.cel43:hover ~ .imagem{transform:rotateY(-15deg);}
+.cel44 { top: 40%; left: 30%;}
+.cel44:hover ~ .image {transform:rotateY(-10deg);}
+.cel45 { top: 40%; left: 40%;}
+.cel45:hover ~ .imagem {transform:rotateY(-5deg);}
+.cel46 { top: 40%; left: 50%;}
+.cel46:hover ~ .imagem  {transform:rotateY(0deg);}
+.cel47 { top: 40%; left: 60%;}
+.cel47:hover ~ .imagem  {transform:rotateY(5deg);}
+.cel48 { top: 40%; left: 70%;}
+.cel48:hover ~ .imagem {transform:rotateY(10deg);}
+.cel49 { top: 40%; left: 80%;}
+.cel49:hover ~ .imagem {transform:rotateY(15deg);}
+.cel50 { top: 40%; left: 90%;}
+.cel50:hover ~ .imagem {transform:rotateY(20deg);}
+.cel51 { top: 50%; left: 0%;}
+.cel51:hover ~ .imagem{transform:rotateY(-25deg);}
+.cel52 { top: 50%; left: 10%;}
+.cel52:hover ~ .imagem{transform:rotateY(-20deg);}
+.cel53 { top: 50%; left: 20%;}
+.cel53:hover ~ .imagem{transform:rotateY(-15deg);}
+.cel54 { top: 50%; left: 30%;}
+.cel54:hover ~ .imagem{transform:rotateY(-10deg);}
+.cel55 { top: 50%; left: 40%;}
+.cel55:hover ~ .imagem {transform:rotateY(-5deg);}
+.cel56 { top: 50%; left: 50%;}
+.cel56:hover ~ .imagem  {transform:rotateY(0deg);}
+.cel57 { top: 50%; left: 60%;}
+.cel57:hover ~ .imagem  {transform:rotateY(5deg);}
+.cel58 { top: 50%; left: 70%;}
+.cel58:hover ~ .imagem {transform:rotateY(10deg);}
+.cel59 { top: 50%; left: 80%;}
+.cel59:hover ~ .imagem {transform:rotateY(15deg);}
+.cel60 { top: 50%; left: 90%;}
+.cel60:hover ~ .imagem {transform:rotateY(20deg);}
+.cel61 { top: 60%; left: 0%;}
+.cel61:hover ~ .imagem{transform:rotateY(-25deg);}
+.cel62 { top: 60%; left: 10%;}
+.cel62:hover ~ .imagem{transform:rotateY(-20deg);}
+.cel63 { top: 60%; left: 20%;}
+.cel63:hover ~ .imagem{transform:rotateY(-15deg);}
+.cel64 { top: 60%; left: 30%;}
+.cel64:hover ~ .imagem{transform:rotateY(-10deg);}
+.cel65 { top: 60%; left: 40%;}
+.cel65:hover ~ .imagem {transform:rotateY(-5deg);}
+.cel66 { top: 60%; left: 50%;}
+.cel66:hover ~ .imagem  {transform:rotateY(0deg);}
+.cel67 { top: 60%; left: 60%;}
+.cel67:hover ~ .imagem  {transform:rotateY(5deg);}
+.cel68 { top: 60%; left: 70%;}
+.cel68:hover ~ .imagem {transform:rotateY(10deg);}
+.cel69 { top: 60%; left: 80%;}
+.cel69:hover ~ .imagem {transform:rotateY(15deg);}
+.cel70 { top: 60%; left: 90%;}
+.cel70:hover ~ .imagem {transform:rotateY(20deg);}
+.cel71 { top: 70%; left: 0%;}
+.cel71:hover ~ .imagem{transform:rotateY(-25deg);}
+.cel72 { top: 70%; left: 10%;}
+.cel72:hover ~ .imagem{transform:rotateY(-20deg);}
+.cel73 { top: 70%; left: 20%;}
+.cel73:hover ~ .imagem{transform:rotateY(-15deg);}
+.cel74 { top: 70%; left: 30%;}
+.cel74:hover ~ .imagem{transform:rotateY(-10deg);}
+.cel75 { top: 70%; left: 40%;}
+.cel75:hover ~ .imagem {transform:rotateY(-5deg);}
+.cel76 { top: 70%; left: 50%;}
+.cel76:hover ~ .imagem  {transform:rotateY(0deg);}
+.cel77 { top: 70%; left: 60%;}
+.cel77:hover ~ .imagem  {transform:rotateY(5deg);}
+.cel78 { top: 70%; left: 70%;}
+.cel78:hover ~ .imagem {transform:rotateY(10deg);}
+.cel79 { top: 70%; left: 80%;}
+.cel79:hover ~ .imagem {transform:rotateY(15deg);}
+.cel80 { top: 70%; left: 90%;}
+.cel80:hover ~ .imagem {transform:rotateY(20deg);}
+.cel81 { top: 80%; left: 0%;}
+.cel81:hover ~ .imagem{transform:rotateY(-25deg);}
+.cel82 { top: 80%; left: 10%;}
+.cel82:hover ~ .imagem{transform:rotateY(-20deg);}
+.cel83 { top: 80%; left: 20%;}
+.cel83:hover ~ .imagem{transform:rotateY(-15deg);}
+.cel84 { top: 80%; left: 30%;}
+.cel84:hover ~ .imagem{transform:rotateY(-10deg);}
+.cel85 { top: 80%; left: 40%;}
+.cel85:hover ~ .imagem {transform:rotateY(-5deg);}
+.cel86 { top: 80%; left: 50%;}
+.cel86:hover ~ .imagem  {transform:rotateY(0deg);}
+.cel87 { top: 80%; left: 60%;}
+.cel87:hover ~ .imagem  {transform:rotateY(5deg);}
+.cel88 { top: 80%; left: 70%;}
+.cel88:hover ~ .imagem {transform:rotateY(10deg);}
+.cel89 { top: 80%; left: 80%;}
+.cel89:hover ~ .imagem {transform:rotateY(15deg);}
+.cel90 { top: 80%; left: 90%;}
+.cel90:hover ~ .imagem {transform:rotateY(20deg);}
+.cel91 { top: 90%; left: 0%;}
+.cel91:hover ~ .imagem{transform:rotateY(-25deg);}
+.cel92 { top: 90%; left: 10%;}
+.cel92:hover ~ .imagem{transform:rotateY(-20deg);}
+.cel93 { top: 90%; left: 20%;}
+.cel93:hover ~ .imagem{transform:rotateY(-15deg);}
+.cel94 { top: 90%; left: 30%;}
+.cel94:hover ~ .imagem{transform:rotateY(-10deg);}
+.cel95 { top: 90%; left: 40%;}
+.cel95:hover ~ .imagem {transform:rotateY(-5deg);}
+.cel96 { top: 90%; left: 50%;}
+.cel96:hover ~ .imagem  {transform:rotateY(0deg);}
+.cel97 { top: 90%; left: 60%;}
+.cel97:hover ~ .imagem  {transform:rotateY(5deg);}
+.cel98 { top: 90%; left: 70%;}
+.cel98:hover ~ .imagem {transform:rotateY(10deg);}
+.cel99 { top: 90%; left: 80%;}
+.cel99:hover ~ .imagem {transform:rotateY(15deg);}
+.ce100 { top: 90%; left: 90%;}
+.ce100:hover ~ .imagem {transform:rotateY(20deg);}

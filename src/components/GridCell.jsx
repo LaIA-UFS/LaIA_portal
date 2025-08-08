@@ -1,0 +1,111 @@
+import imagem from '../img/exemplo.png'
+function GridCell () {
+    return (
+        <div class="container">
+        <a class="reflection cell1" href="#"></a>
+        <a class="reflection cell2" href="#"></a>
+        <a class="reflection cell3" href="#"></a>
+        <a class="reflection cell4" href="#"></a>
+        <a class="reflection cell5" href="#"></a>
+        <a class="reflection cell6" href="#"></a>
+        <a class="reflection cell7" href="#"></a>
+        <a class="reflection cell8" href="#"></a>
+        <a class="reflection cell9" href="#"></a>
+        <a class="reflection cel10" href="#"></a>
+        <a class="reflection cel11" href="#"></a>
+        <a class="reflection cel12" href="#"></a>
+        <a class="reflection cel13" href="#"></a>
+        <a class="reflection cel14" href="#"></a>
+        <a class="reflection cel15" href="#"></a>
+        <a class="reflection cel16" href="#"></a>
+        <a class="reflection cel17" href="#"></a>
+        <a class="reflection cel18" href="#"></a>
+        <a class="reflection cel19" href="#"></a>
+        <a class="reflection cel20" href="#"></a>
+        <a class="reflection cel21" href="#"></a>
+        <a class="reflection cel22" href="#"></a>
+        <a class="reflection cel23" href="#"></a>
+        <a class="reflection cel24" href="#"></a>
+        <a class="reflection cel25" href="#"></a>
+        <a class="reflection cel26" href="#"></a>
+        <a class="reflection cel27" href="#"></a>
+        <a class="reflection cel28" href="#"></a>
+        <a class="reflection cel29" href="#"></a>
+        <a class="reflection cel30" href="#"></a>
+        <a class="reflection cel31" href="#"></a>
+        <a class="reflection cel32" href="#"></a>
+        <a class="reflection cel33" href="#"></a>
+        <a class="reflection cel34" href="#"></a>
+        <a class="reflection cel35" href="#"></a>
+        <a class="reflection cel36" href="#"></a>
+        <a class="reflection cel37" href="#"></a>
+        <a class="reflection cel38" href="#"></a>
+        <a class="reflection cel39" href="#"></a>
+        <a class="reflection cel40" href="#"></a>
+        <a class="reflection cel41" href="#"></a>
+        <a class="reflection cel42" href="#"></a>
+        <a class="reflection cel43" href="#"></a>
+        <a class="reflection cel44" href="#"></a>
+        <a class="reflection cel45" href="#"></a>
+        <a class="reflection cel46" href="#"></a>
+        <a class="reflection cel47" href="#"></a>
+        <a class="reflection cel48" href="#"></a>
+        <a class="reflection cel49" href="#"></a>
+        <a class="reflection cel50" href="#"></a>
+        <a class="reflection cel51" href="#"></a>
+        <a class="reflection cel52" href="#"></a>
+        <a class="reflection cel53" href="#"></a>
+        <a class="reflection cel54" href="#"></a>
+        <a class="reflection cel55" href="#"></a>
+        <a class="reflection cel56" href="#"></a>
+        <a class="reflection cel57" href="#"></a>
+        <a class="reflection cel58" href="#"></a>
+        <a class="reflection cel59" href="#"></a>
+        <a class="reflection cel60" href="#"></a>
+        <a class="reflection cel61" href="#"></a>
+        <a class="reflection cel62" href="#"></a>
+        <a class="reflection cel63" href="#"></a>
+        <a class="reflection cel64" href="#"></a>
+        <a class="reflection cel65" href="#"></a>
+        <a class="reflection cel66" href="#"></a>
+        <a class="reflection cel67" href="#"></a>
+        <a class="reflection cel68" href="#"></a>
+        <a class="reflection cel69" href="#"></a>
+        <a class="reflection cel70" href="#"></a>
+        <a class="reflection cel71" href="#"></a>
+        <a class="reflection cel72" href="#"></a>
+        <a class="reflection cel73" href="#"></a>
+        <a class="reflection cel74" href="#"></a>
+        <a class="reflection cel75" href="#"></a>
+        <a class="reflection cel76" href="#"></a>
+        <a class="reflection cel77" href="#"></a>
+        <a class="reflection cel78" href="#"></a>
+        <a class="reflection cel79" href="#"></a>
+        <a class="reflection cel80" href="#"></a>
+        <a class="reflection cel81" href="#"></a>
+        <a class="reflection cel82" href="#"></a>
+        <a class="reflection cel83" href="#"></a>
+        <a class="reflection cel84" href="#"></a>
+        <a class="reflection cel85" href="#"></a>
+        <a class="reflection cel86" href="#"></a>
+        <a class="reflection cel87" href="#"></a>
+        <a class="reflection cel88" href="#"></a>
+        <a class="reflection cel89" href="#"></a>
+        <a class="reflection cel90" href="#"></a>
+        <a class="reflection cel91" href="#"></a>
+        <a class="reflection cel92" href="#"></a>
+        <a class="reflection cel93" href="#"></a>
+        <a class="reflection cel94" href="#"></a>
+        <a class="reflection cel95" href="#"></a>
+        <a class="reflection cel96" href="#"></a>
+        <a class="reflection cel97" href="#"></a>
+        <a class="reflection cel98" href="#"></a>
+        <a class="reflection cel99" href="#"></a>
+        <a class="reflection ce100" href="#"></a>
+        <img class="imagem" src={imagem}>
+        </img>
+    </div>
+    )
+}
+
+export default GridCell
