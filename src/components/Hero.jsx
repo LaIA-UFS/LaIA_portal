@@ -2,43 +2,53 @@ import GridCell from './GridCell.jsx'
 
 function Hero() {
   return (
-    <section 
-      id="hero" 
-      className="relative flex items-center justify-between bg-gradient-to-br from-[#0b0212] to-[#0d1b46] text-white h-185"
+    <section
+      id="hero"
+      className="relative md:h-180 flex flex-col md:flex-row items-center justify-between bg-gradient-to-br from-[#0b0212] to-[#0d1b46] text-white h-215 px-12 md:px-6 pt-24 md:pt-10 overflow-hidden"
     >
-      {/* Texto Principal e descrição */}
-      <div className="flex md:flex-col pl-30 w-200">
+      {/* Texto Principal */}
+      <div className="flex flex-col md:flex-row md:pl-30 w-full md:w-200 text-center md:text-left">
         <div>
-          <h1 className="text-5xl md:text-5xl font-bold leading-tight mb-6">
+          <h1 className="text-2xl sm:text-4xl md:text-5xl pt-10 md:pt-0 font-bold leading-tight">
             Liga Acadêmica de <br/> <span className="bg-gradient-to-r from-[#184be1] via-[#05b3f8] to-[#b02f83] bg-clip-text text-transparent">Inteligência Artificial</span>
           </h1>
-          <p className="text-lg  text-gray-300 mb-8 ">
-            A Liga Acadêmica de Inteligência Artificial da UFS (LaIA), 
-            tem seus objetivos baseados em pilares como pesquisa, ensino, 
-            extensão e inovação. Somos um liga voltada para o
-            desenvolvimento da área de IA, com a proposta de utilizar
-            esse tema tanto como meio quanto como fim, 
-            auxiliando ligantes e não ligantes a realizarem pesquisas com 
-            apoio técnico estrutural, fomentando o protagonismo e o desenvolvimento 
-            do discente, além de trazer impactos positivos para outras áreas e sociedade em 
-            geral. A inovação e extensão da liga propõe um apoio para 
-            realização de projetos inovadores, sempre com uma visão finalística 
-            de melhorar a realidade que estamos envolvidos e com uma importante 
-            perspectiva ética e moral.
-
-          </p>
+          <div className="text-base pt-10 md:text-lg text-gray-300 mb-8 text-left md:text-justify">
+            <p>
+              A Liga Acadêmica de Inteligência Artificial da UFS (LaIA), 
+              tem seus objetivos baseados em pilares como pesquisa, ensino, 
+              extensão e inovação.
+            </p>
+            <p>
+              Somos um liga voltada para o
+              desenvolvimento da área de IA, com a proposta de utilizar
+              esse tema tanto como meio quanto como fim, 
+              auxiliando ligantes e não ligantes a realizarem pesquisas com 
+              apoio técnico estrutural, fomentando o protagonismo e o desenvolvimento 
+              do discente, além de trazer impactos positivos para outras áreas e sociedade em 
+              geral.
+            </p>
+            <p className="indent-8">
+              <br/>
+              A inovação e extensão da liga propõe um apoio para 
+              realização de projetos inovadores, sempre com uma visão finalística 
+              de melhorar a realidade que estamos envolvidos e com uma importante 
+              perspectiva ética e moral.
+            </p>
+          </div>
         </div>
       </div>
 
-      {/* Efeito de movimentação de imagem */}
-    <div><GridCell/></div>
+    {/* Movimentação de imagem */}
+    <div className="flex-1 hidden xl:block justify-center md:absolute md:justify-end md:right-6">
+        <GridCell />
+    </div>
 
       {/*ONDA AZUL ESCURO*/}
       <div className="absolute bottom-0 left-0 w-full z-10">
         <svg
           viewBox="0 0 1200 120"
           preserveAspectRatio="none"
-          className="w-full h-[100px]"
+          className="w-full h-[30px] sm:h-[90px] md:h-[100px]"
         >
           {/* GRADIENTE*/}
           <defs>
@@ -59,7 +69,7 @@ function Hero() {
         <svg
           viewBox="0 0 1200 120"
           preserveAspectRatio="none"
-          className="w-full h-[160px]"
+          className="w-full h-[60px] sm:h-[130px] md:h-[160px]"
         >
           {/* GRADIENTE*/}
           <defs>
@@ -77,11 +87,11 @@ function Hero() {
       </div>
       
       {/* ONDA FININHA ANIMADA*/}
-      <div className="absolute bottom-0 left-0 w-full h-[140px] z-20">
+      <div className="absolute -bottom-22 md:bottom-0 left-0 w-full h-[140px] z-20">
           <svg
             viewBox="0 0 1200 120"
             preserveAspectRatio="none"
-            className="w-full h-full"
+            className="w-full h-[40px] md:h-[140px]"
           >
             <g>
               <animateTransform

@@ -5,7 +5,7 @@ function FlipCard({ frontImg, backImg, disableFlip = false }) {
 
   return (
     <div
-      className="w-[260px] h-[260px] [perspective:1000px] cursor-pointer"
+      className="w-[180px] md:w-[260px] h-[180px] md:h-[260px] [perspective:1000px] cursor-pointer"
       onClick={() => !disableFlip && setFlipped(!flipped)}
     >
       <div

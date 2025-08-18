@@ -38,13 +38,28 @@ html {
   transform: rotateY(180deg);
 }
 
-
 /* Impedir arraste de imagens */
 
 img {
   -webkit-user-drag: none;
   user-select: none;
 }
+
+/* Popup email */
+
+.popup{
+  transition: all 0.1s;
+  z-index: -1;
+  transform: scale(.5);
+  opacity: 0;
+}
+
+.popup.opened {
+  z-index: 999;
+  transform: scale(1);
+  opacity: 1;
+}
+
 
 /* Grid rotativo */
 

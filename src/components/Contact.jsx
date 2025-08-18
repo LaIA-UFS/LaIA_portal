@@ -66,7 +66,7 @@ function Contact (){
         })
 
         if (response.ok) {
-            alert("Mensagem enviada com sucesso ;)")
+            
             setFormData({
                 primeiroNome: "",
                 ultimoNome: "",
@@ -85,23 +85,23 @@ function Contact (){
     // Inicío do componente de Frontend
     return (
         <div id="contato" className="flex justify-center scroll-mt-18 items-center w-screen min-h-screen bg-white">
-            <div className="container mx-auto my-4 px-4 lg:px-20">
+            <div className="container mx-auto my-4 px-2 sm:px-4 lg:px-20 md:mb-0 -mb-2">
 
                 {/* Região de campos */}
-                <div className="w-full p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl">
+                <div className="w-full p-4 my-5 md:p-8 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl">
                     <div className="flex">
-                        <h1 className="font-bold uppercase text-4xl">
+                        <h1 className="font-bold uppercase text-2xl sm:text-3xl md:text-4xl">
                         Entre em contato <br /> com a gente
                         </h1>
                     </div>
                     
                     {/* Caixas de inputs*/}
-                    <div className="grid grid-cols-1 gap-5 md:grid-cols-2 mt-5">
+                    <div className="grid grid-cols-1 gap-3 sm:gap-4 md:gap-5 md:grid-cols-2 mt-3 sm:mt-5">
                         <input
                         name="primeiroNome"
                         value={formData.primeiroNome}
                         onChange={handleChange}
-                        className={`w-full mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline ${
+                        className={`w-full mt-1 sm:mt-2 p-2 sm:p-3 rounded-lg focus:outline-none focus:shadow-outline ${
                             formErrors.primeiroNome ? "bg-red-100 border border-red-400" : "bg-gray-100 text-gray-900"
                         }`}              
                         type="text"
@@ -164,17 +164,17 @@ function Contact (){
 
                     {/* Botão de enviar mensagem */}
                     <div className="my-2 w-1/2 lg:w-1/4">
-                        <button onClick={handleSubmit} className="uppercase text-sm font-bold tracking-wide bg-blue-900 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline">
+                        <button onClick={handleSubmit} className="uppercase text-sm font-bold tracking-wide bg-blue-900 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline cursor-pointer transform active:scale-98">
                         Enviar mensagem
                         </button>
                     </div>
                 </div>
 
                 {/* Região de Informações adicionais */}
-                <div className="w-full lg:-mt-96 lg:w-2/6 px-8 py-12 ml-auto bg-blue-900 rounded-2xl">
+                <div className="w-full md:-mt-96 lg:w-2/6 px-8 py-12 ml-auto bg-blue-900 rounded-2xl">
                     <div className="flex flex-col text-white">
                         <h1 className="font-bold uppercase text-4xl my-4">
-                            Converse com a gente
+                            Converse conosco
                         </h1>
                         <p className="text-gray-400">
                             Você pode nos enviar uma mensagem pela caixa ao lado, por email, 

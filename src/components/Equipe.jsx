@@ -1,5 +1,6 @@
 import { useState } from "react";
 import FlipCard from "./FlipCard";
+import PopUp from "./PopUp"
 
 import PRESIDENTE from '../img/artur_lima.png';
 import VICE_PRESIDENTE from '../img/pericles_leite.png';
@@ -61,12 +62,13 @@ function Equipe() {
       id="equipe"
       className="-scroll-mt-5 relative bg-gradient-to-r from-[#bedffb] to-[#fefeff] min-h-[840px] h-full"
     >
+      
     {/*ONDA AZUL CLARO*/}
       <div className="absolute top-0 left-0 w-full leading-none z-0">
         <svg
           viewBox="0 0 1200 120"
           preserveAspectRatio="none"
-          className="w-full h-[120px]"
+          className="w-full h-[50px] md:h-[120px]"
         >
         <linearGradient id="ondaGradientAzulClaro" x1="100%" y1="100%" x2="0%" y2="100%">
           <stop offset="20%" stopColor="#101f5e" />
@@ -85,7 +87,7 @@ function Equipe() {
         <svg
           viewBox="0 0 1200 180"
           preserveAspectRatio="none"
-          className="w-full h-[140px]"
+          className="w-full h-[50px] md:h-[140px]"
         >
           <defs>
             <linearGradient id="ondaGradient" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -101,11 +103,11 @@ function Equipe() {
       </div>
       
       {/* ONDA FININHA ANIMADA*/}
-        <div className="absolute top-0 left-0 w-full h-[140px] z-20">
+        <div className="absolute top-2 md:top-0 left-0 w-full h-[140px] z-20">
             <svg
               viewBox="0 0 1200 120"
               preserveAspectRatio="none"
-              className="w-full h-full"
+              className="w-full md:h-full h-[40px]"
             >
               <g>
                 <animateTransform
@@ -135,24 +137,24 @@ function Equipe() {
         </div>
 
       {/* Conteúdo principal*/}
-      <div className="relative z-30 max-w-6xl mx-auto px-4 pt-[100px] pb-[50px]">
-
+      <div className="relative z-30 max-w-6xl mx-auto px-4 pt-[60px] md:pt-[100px] pb-[40px] md:pb-[50px]">
+       
         {/* Título */}
-        <div className="text-center mb-12">
-          <h3 className="text-4xl font-semibold mb-2 text-[#0b0b1e]">Conheça nossa Equipe</h3>
+        <div className="text-center text-2xl sm:text-3xl md:text-4xl font-semibold mb-6 text-[#0b0b1e]">
+          <h3 className="text-2xl md:text-4xl font-semibold mb-2 text-[#0b0b1e]">Conheça nossa Equipe</h3>
         </div>
 
         {/* Botões de filtro */}
         <div
           id="filter-btn-box"
-          className="flex flex-wrap justify-center gap-4 mb-12"
+          className="flex flex-nowrap justify-center gap-2 md:gap-4 mb-12"
         >
           {filters.map((filter) => (
             <button
               key={filter.id}
               id={filter.id}
               onClick={() => setActiveFilter(filter.value)}
-              className={`px-6 py-2 rounded-full font-medium transition shadow-sm
+              className={`px-2 py-1 sm:px-6 sm:py-2 rounded-full font-medium transition shadow-sm
                 ${
                   activeFilter === filter.value
                     ? " bg-[#2e61ff] text-white"
@@ -165,7 +167,7 @@ function Equipe() {
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center">
+        <div className="grid gap-2 grid-cols-2 lg:grid-cols-4 md:gap-8 justify-items-center">
           {filteredMembers.map((member) => (
             <FlipCard key={member.id} frontImg={member.img} backImg={member.backImg}  disableFlip={member.disableFlip}/>
           ))}
