@@ -5,12 +5,12 @@ function Header (){
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 w-full z-50 bg-gradient-to-br from-[#0b0b1e] to-[#1438a5] text-white shadow-md p-3">
-      <div className="flex justify-between items-center max-w-7xl mx-auto px-4">
+    <header className="fixed top-[0%] w-full z-50 bg-gradient-to-br from-[#0b0b1e] to-[#1438a5] text-white shadow-md p-[0.75%]">
+      <div className="flex justify-between items-center max-w-[87%] mx-auto px-[1%]">
 
        {/* Nossa logo bonita */} 
-        <div className="flex items-center space-x-3">
-            <img src={logo} alt="Logo LaIA" className="h-12"/>
+        <div className="flex items-center space-x-[0.75%]">
+            <img src={logo} alt="Logo LaIA" className="h-[6.9vh]"/>
        </div>
 
        {/* Botão sanduíche - Mobile */}
@@ -25,11 +25,11 @@ function Header (){
 
         {/* Menu de navegação - Desktop */}
         <nav className="hidden md:flex">
-          <ul className="flex space-x-8 md:text-[1rem] font-medium">
-            <li><a href="#hero" className="px-4 py-2 rounded-md hover:bg-[#1438a5] bg-opacity-50">A LaIA</a></li>
-            <li><a href="#projetos" className="px-4 py-2 rounded-md hover:bg-[#1438a5] bg-opacity-50">Projetos</a></li>
-            <li><a href="#equipe" className="px-4 py-2 rounded-md hover:bg-[#1438a5] bg-opacity-50">Quem somos</a></li>
-            <li><a href="#contato" className="px-4 py-2 rounded-md hover:bg-[#1438a5] bg-opacity-50">Contato</a></li>
+          <ul className="flex space-x-[3vw] md:text-[100%] font-medium">
+            <li><a href="#hero" className="px-[1vw] py-[1.2vh] rounded-md hover:bg-[#1438a5] bg-opacity-50">A LaIA</a></li>
+            <li><a href="#projetos" className="px-[1vw] py-[1.2vh] rounded-md hover:bg-[#1438a5] bg-opacity-50">Projetos</a></li>
+            <li><a href="#equipe" className="px-[1vw] py-[1.2vh] rounded-md hover:bg-[#1438a5] bg-opacity-50">Quem somos</a></li>
+            <li><a href="#contato" className="px-[1vw] py-[1.2vh] rounded-md hover:bg-[#1438a5] bg-opacity-50">Contato</a></li>
           </ul>
         </nav>
       </div>

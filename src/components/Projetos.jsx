@@ -23,22 +23,22 @@ function Projetos() {
   const anteCard = () => setCurrent((prev) => (prev - 1 + cards.length) % cards.length);
 
   return (
-    <div className="relative md:h-auto md:w-full w-[350px] md:max-w-5xl mx-auto">
+    <div className="flex flex-col justify-center relative md:h-[94%] md:w-full w-[75%] md:max-w-[70vw] mx-auto">
       <div className="bg-[#3f6df6] rounded-xl overflow-hidden">
 
         {/* cards */}
-        <div className="flex transition-transform duration-500 h-[560px] md:h-[450px] z-0" style={{transform:`translateX(-${current * 100}%)`}}>
+        <div className="flex transition-transform duration-500 h-[63vh] sm:h-[90vh] md:h-[65vh] z-0" style={{transform:`translateX(-${current * 100}%)`}}>
           {cards.map((slide, indice) => (
-            <div key={indice} className="flex flex-col md:flex-row flex-shrink-0 items-center justify-between w-full px-4 md:px-12 py-6 md:py-12">
+            <div key={indice} className="flex flex-col md:flex-row flex-shrink-0 items-center justify-between w-full px-[4vw] sm:px-[2vw] md:px-[3vw] py-[2.5vh]">
               
                 {/* Texto */}
-                <div className="w-full md:max-w-1/2 px-4 md:px-10 text-center md:text-left">
-                  <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#0a2780] mb-4">{slide.title}</h2>
-                  <p className="text-sm sm:text-base md:text-white mb-6">{slide.text}</p>
+                <div className="w-full md:max-w-[50%] px-[7%] sm:px-[0%] md:px-[4%] text-center md:text-left">
+                  <h2 className="text-[150%] sm:text-[170%] md:text-[220%] font-bold text-[#0a2780] mb-[1.5vh]">{slide.title}</h2>
+                  <p className="text-sm sm:text-base md:text-white mb-[7%] sm:mb-[0%]">{slide.text}</p>
                 </div>
 
                 {/* Imagem */}
-                <div className="mt-0 md:mt-0">
+                <div className="mt-[0%] md:mt-[0%]">
                   <img src={slide.img} alt={`Slide ${indice + 1}`} className="rounded-xl w-full md:w-[520px] object-contain mt-4 md:mt-0" />
                 </div>
             </div>
@@ -49,7 +49,7 @@ function Projetos() {
       {/* Setas */}
       <button
         onClick={anteCard}
-        className="absolute top-1/2 -left-5 md:-left-12 -translate-y-1/2 bg-white hover:bg-gray-100 text-gray-800 p-3 rounded-full shadow-lg transition duration-300 ease-in-out"
+        className="absolute top-[50%] -left-[6%] md:-left-[3.5%] -translate-y-1/2 bg-white hover:bg-gray-100 text-gray-800 p-3 rounded-full shadow-lg transition duration-300 ease-in-out"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -65,7 +65,7 @@ function Projetos() {
       
       <button
         onClick={proxCard}
-        className="absolute top-1/2 -right-5 md:-right-12 transform -translate-y-1/2 bg-white hover:bg-gray-100 text-gray-800 p-3 rounded-full shadow-lg transition duration-300 ease-in-out"
+        className="absolute top-[50%] -right-[6%] md:-right-[3.5%] transform -translate-y-1/2 bg-white hover:bg-gray-100 text-gray-800 p-3 rounded-full shadow-lg transition duration-300 ease-in-out"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -80,7 +80,7 @@ function Projetos() {
       </button>
 
       {/* Indicadores */}
-      <div className="absolute -bottom-7 left-1/2 transform -translate-x-1/2 flex gap-2 z-10">
+      <div className="absolute -bottom-[6%] left-[50%] transform -translate-x-[50%] flex gap-2 z-10">
         {cards.map((_, i) => (
           <button
             key={i}

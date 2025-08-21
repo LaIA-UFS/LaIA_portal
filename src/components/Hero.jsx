@@ -4,15 +4,15 @@ function Hero() {
   return (
     <section
       id="hero"
-      className="relative md:h-180 flex flex-col md:flex-row items-center justify-between bg-gradient-to-br from-[#0b0212] to-[#0d1b46] text-white h-215 px-12 md:px-6 pt-24 md:pt-10 overflow-hidden"
+      className="relative sm:h-[103vh] md:h-[103vh] flex flex-col md:flex-row items-center justify-between bg-gradient-to-br from-[#0b0212] to-[#0d1b46] text-white h-[90vh] px-[10vw] md:px-[0vw] pt-[10vh] md:pt-[6vh]"
     >
       {/* Texto Principal */}
-      <div className="flex flex-col md:flex-row md:pl-30 w-full md:w-200 text-center md:text-left">
+      <div className="flex flex-col md:flex-row md:pl-[8.45vw] w-full md:w-[52vw] text-center md:text-left">
         <div>
-          <h1 className="text-2xl sm:text-4xl md:text-5xl pt-10 md:pt-0 font-bold leading-tight">
+          <h1 className="text-[150%] sm:text-[180%] md:text-[300%] pt-[4vh] md:pt-[0vh] font-bold leading-tight">
             Liga Acadêmica de <br/> <span className="bg-gradient-to-r from-[#184be1] via-[#05b3f8] to-[#b02f83] bg-clip-text text-transparent">Inteligência Artificial</span>
           </h1>
-          <div className="text-base pt-10 md:text-lg text-gray-300 mb-8 text-left md:text-justify">
+          <div className="text-base pt-[4.5vh] sm:text-[100%] md:text-[116%] text-gray-300 mb-[3.6vh] text-left md:text-justify">
             <p>
               A Liga Acadêmica de Inteligência Artificial da UFS (LaIA), 
               tem seus objetivos baseados em pilares como pesquisa, ensino, 
@@ -39,7 +39,7 @@ function Hero() {
       </div>
 
     {/* Movimentação de imagem */}
-    <div className="flex-1 hidden xl:block justify-center md:absolute md:justify-end md:right-6">
+    <div className="flex-1 hidden xl:block justify-center md:absolute md:justify-end md:right-[0%]">
         <GridCell />
     </div>
 
@@ -48,7 +48,7 @@ function Hero() {
         <svg
           viewBox="0 0 1200 120"
           preserveAspectRatio="none"
-          className="w-full h-[30px] sm:h-[90px] md:h-[100px]"
+          className="w-full h-[3.4vh] sm:h-[13vh] md:h-[14.5vh]"
         >
           {/* GRADIENTE*/}
           <defs>
@@ -69,7 +69,7 @@ function Hero() {
         <svg
           viewBox="0 0 1200 120"
           preserveAspectRatio="none"
-          className="w-full h-[60px] sm:h-[130px] md:h-[160px]"
+          className="w-full h-[6.8vh] sm:h-[20.5vh] md:h-[23.2vh]"
         >
           {/* GRADIENTE*/}
           <defs>
@@ -91,7 +91,7 @@ function Hero() {
           <svg
             viewBox="0 0 1200 120"
             preserveAspectRatio="none"
-            className="w-full h-[40px] md:h-[140px]"
+            className="w-full h-[4.53vh] md:h-[20.3vh]"
           >
             <g>
               <animateTransform
