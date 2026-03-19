@@ -5,7 +5,7 @@ function Header (){
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-[0%] w-full z-50 bg-gradient-to-br from-[#0b0b1e] to-[#1438a5] text-white shadow-md p-[0.75%]">
+    <header className="fixed top-[0%] w-full z-50 bg-gradient-to-br from-[#9b0b99] to-[#999999] text-white shadow-md p-[0.75%]">
       <div className="flex justify-between items-center max-w-[87%] mx-auto px-[1%]">
 
        {/* Nossa logo bonita */} 
