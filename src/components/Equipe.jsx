@@ -1,32 +1,31 @@
 import { useState } from "react";
 import FlipCard from "./FlipCard";
-import PopUp from "./PopUp"
 
-import PRESIDENTE from '../img/artur_lima.png';
-import VICE_PRESIDENTE from '../img/pericles_leite.png';
-import SECRETARIO_GERAL from '../img/nayara_oliveira.png';
-import DIRETOR_ENSINO from '../img/joao_vitor.png';
-import DIRETOR_MTK from '../img/arthur_barreto.png';
-import DIRETOR_FINANCAS from '../img/arthur_felipe.png';
-import DIRETOR_RH from '../img/bruno_carvalho.png';
-import DIRETOR_PROJETOS from '../img/danilo_deichmann.png';
-import DIRETOR_PESQUISA from '../img/filipe_ciriaco.png';
-import DIRETOR_INOVACAO from '../img/helen_bispo.png';
-import DIRETOR_EVENTOS from '../img/raissa_cavalcante.png';
-import PROF_ORIENTADOR from '../img/gilton_mal.png';
+import PRESIDENTE from '../img/membros/artur_lima.png';
+import VICE_PRESIDENTE from '../img/membros/pericles_leite.png';
+import SECRETARIO_GERAL from '../img/membros/nayara_oliveira.png';
+import DIRETOR_ENSINO from '../img/membros/joao_vitor.png';
+import DIRETOR_MTK from '../img/membros/arthur_barreto.png';
+import DIRETOR_FINANCAS from '../img/membros/arthur_felipe.png';
+import DIRETOR_RH from '../img/membros/bruno_carvalho.png';
+import DIRETOR_PROJETOS from '../img/membros/danilo_deichmann.png';
+import DIRETOR_PESQUISA from '../img/membros/filipe_ciriaco.png';
+import DIRETOR_INOVACAO from '../img/membros/helen_bispo.png';
+import DIRETOR_EVENTOS from '../img/membros/raissa_cavalcante.png';
+import PROF_ORIENTADOR from '../img/membros/gilton_mal.png';
 
 
-import PRESIDENTE_VERSO from '../img/frase_artur_lima.png';
-import VICE_PRESIDENTE_VERSO from '../img/frase_pericles_leite.png';
-import SECRETARIO_GERAL_VERSO from '../img/frase_nayara_oliveira.png';
-import DIRETOR_ENSINO_VERSO from '../img/frase_joao_vitor.png';
-import DIRETOR_MTK_VERSO from '../img/frase_arthur_vinicius.png';
-import DIRETOR_FINANCAS_VERSO from '../img/frase_arthur_felipe.png';
-import DIRETOR_RH_VERSO from '../img/frase_bruno_carvalho.png';
-import DIRETOR_PROJETOS_VERSO from '../img/frase_danilo_deichmann.png';
-import DIRETOR_PESQUISA_VERSO from '../img/frase_filipe_ciriaco.png';
-import DIRETOR_INOVACAO_VERSO from '../img/frase_helen_bispo.png';
-import DIRETOR_EVENTOS_VERSO from '../img/frase_raissa_cavalcante.png';
+import PRESIDENTE_VERSO from '../img/fundos/frase_artur_lima.png';
+import VICE_PRESIDENTE_VERSO from '../img/fundos/frase_pericles_leite.png';
+import SECRETARIO_GERAL_VERSO from '../img/fundos/frase_nayara_oliveira.png';
+import DIRETOR_ENSINO_VERSO from '../img/fundos/frase_joao_vitor.png';
+import DIRETOR_MTK_VERSO from '../img/fundos/frase_arthur_vinicius.png';
+import DIRETOR_FINANCAS_VERSO from '../img/fundos/frase_arthur_felipe.png';
+import DIRETOR_RH_VERSO from '../img/fundos/frase_bruno_carvalho.png';
+import DIRETOR_PROJETOS_VERSO from '../img/fundos/frase_danilo_deichmann.png';
+import DIRETOR_PESQUISA_VERSO from '../img/fundos/frase_filipe_ciriaco.png';
+import DIRETOR_INOVACAO_VERSO from '../img/fundos/frase_helen_bispo.png';
+import DIRETOR_EVENTOS_VERSO from '../img/fundos/frase_raissa_cavalcante.png';
 
 const members = [
   { id: 1, img: PRESIDENTE, backImg: PRESIDENTE_VERSO , type: "administracao" },

@@ -4,42 +4,42 @@ function Hero() {
   return (
     <section
       id="hero"
-      className="relative sm:h-[103vh] md:h-[103vh] flex flex-col md:flex-row items-center justify-between bg-gradient-to-br from-[#0b0212] to-[#0d1b46] text-white h-[90vh] px-[10vw] md:px-[0vw] pt-[10vh] md:pt-[6vh]"
+      className="relative  sm:h-[103vh]  md:h-[103vh] flex flex-col md:flex-row 
+      items-start  justify-start  bg-gradient-to-br from-[#0b0212]  to-[#0d1b46] 
+      text-white h-[90vh] md:bg-[url(../img/fundos/hero-bg.svg)]"
     >
       {/* Texto Principal */}
-      <div className="flex flex-col md:flex-row md:pl-[8.45vw] w-full md:w-[52vw] text-center md:text-left">
-        <div>
-          <h1 className="text-[150%] sm:text-[180%] md:text-[300%] pt-[4vh] md:pt-[0vh] font-bold leading-tight">
-            Liga Acadêmica de <br/> <span className="bg-gradient-to-r from-[#184be1] via-[#05b3f8] to-[#b02f83] bg-clip-text text-transparent">Inteligência Artificial</span>
-          </h1>
-          <div className="text-base pt-[4.5vh] sm:text-[100%] md:text-[116%] text-gray-300 mb-[3.6vh] text-left md:text-justify">
-            <p>
-              A Liga Acadêmica de Inteligência Artificial da UFS (LaIA), 
-              tem seus objetivos baseados em pilares como pesquisa, ensino, 
-              extensão e inovação.
-            </p>
-            <p>
-              Somos um liga voltada para o
-              desenvolvimento da área de IA, com a proposta de utilizar
-              esse tema tanto como meio quanto como fim, 
-              auxiliando ligantes e não ligantes a realizarem pesquisas com 
-              apoio técnico estrutural, fomentando o protagonismo e o desenvolvimento 
-              do discente, além de trazer impactos positivos para outras áreas e sociedade em 
-              geral.
-            </p>
-            <p className="indent-8">
-              <br/>
-              A inovação e extensão da liga propõe um apoio para 
-              realização de projetos inovadores, sempre com uma visão finalística 
-              de melhorar a realidade que estamos envolvidos e com uma importante 
-              perspectiva ética e moral.
-            </p>
-          </div>
-        </div>
-      </div>
+      <div className="flex flex-col pt-[35%] md:pt-[10%] md:pl-[8.45vw] w-full
+      md:w-[52vw] text-center md:text-left">
+
+      <h1 className="text-[180%] md:text-[350%] font-bold leading-tight">
+        <p className="text-[80%] md:text-[60%] mb-4">
+            Bem vindo à{" "}
+          <span className="relative inline-block bg-gradient-to-r from-[#184be1] 
+          to-[#b02f83] bg-clip-text text-transparent">
+            LaIA
+            <span className="absolute left-0 -bottom-[2px] h-[3px] w-full 
+            bg-gradient-to-r from-[#184be1] to-[#b02f83]">
+            </span>
+          </span>
+        <br/>
+        </p>
+            Liga Acadêmica de
+        <span className="relative inline-block">
+          <span className="absolute -left-2 md:-left-3 -top-6.5 md:-top-13.5 h-[160%] 
+          w-[3px] md:w-[4px] bg-gradient-to-b from-[#184be1] via-[#05b3f8] to-[#b02f83]">
+          </span>
+          <span className="bg-gradient-to-r from-[#184be1] via-[#05b3f8] to-[#b02f83] 
+          bg-clip-text text-transparent">
+            Inteligência Artificial
+          </span>
+        </span>
+
+      </h1>
+    </div>
 
     {/* Movimentação de imagem */}
-    <div className="flex-1 hidden xl:block justify-center md:absolute md:justify-end md:right-[0%]">
+    <div className="flex-1 w-120 hidden xl:block self-center md:absolute md:top-8 md:right-[8%]">
         <GridCell />
     </div>
 

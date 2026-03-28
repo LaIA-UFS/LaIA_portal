@@ -1,4 +1,4 @@
-import imagem from '../img/exemplo.png'
+import imagem from '../img/icons/HarpIA.svg'
 function GridCell () {
     return (
         <div class="container">
