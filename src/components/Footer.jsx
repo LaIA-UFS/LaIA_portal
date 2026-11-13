@@ -35,8 +35,11 @@ function Footer() {
 
       {/* Créditos */}
       <div className="mt-8 border-t border-white/20"/>
-      <div className="flex flex-col items-center h-16 pt-6 justify-self-center text-center text-xs text-gray-400">
-        © {new Date().getFullYear()} LaIA. Todos os direitos reservados.
+      <div className="flex flex-col items-center gap-2 px-4 py-5 text-center text-xs text-gray-400">
+        <span>© {new Date().getFullYear()} LaIA. Todos os direitos reservados.</span>
+        <code className="select-text font-mono text-[10px] tracking-[0.2em] text-blue-100/55">
+          T05PTUFUT1BFSUE=
+        </code>
       </div>
     </footer>
   );
